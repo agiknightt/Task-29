@@ -9,14 +9,12 @@ namespace Task_29
             Player player1 = new Player(10, 20);
             Renderer renderer = new Renderer();
             
-
             renderer.Render(player1.Y, player1.X);
             Console.ReadKey();
         }
     }
     class Player
-    {       
-
+    {
         public int X { get; set; }        
         public int Y { get; set; }
         public Player(int x, int y)
