@@ -6,20 +6,24 @@ namespace Task_29
     {
         static void Main(string[] args)
         {
-            Player player1 = new Player();
+            Player player1 = new Player(10, 20);
             Renderer renderer = new Renderer();
-
-            player1.X = 20;
-            player1.Y = 10;
+            
 
             renderer.Render(player1.Y, player1.X);
             Console.ReadKey();
         }
     }
     class Player
-    {
-        public int X;
-        public int Y;                
+    {       
+
+        public int X { get; set; }        
+        public int Y { get; set; }
+        public Player(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }        
     }
     class Renderer
     {
